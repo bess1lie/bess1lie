@@ -1,42 +1,103 @@
 
 # 🕵️ bess1lie
 
-**Bug Bounty Hunter** · **Security Researcher** · **HackerOne**
+**Security Researcher** focused on offensive security, automation and bug bounty tooling.
+
+Building open source tools for reconnaissance, vulnerability discovery and workflow automation.
 
 [![HackerOne](https://img.shields.io/badge/HackerOne-bess1lie-494649?style=for-the-badge&logo=hackerone&logoColor=white)](https://hackerone.com/bess1lie)
 
 ---
 
+### 📌 Currently
+
+- 🔨 Improving **BountyHunt** — bug bounty automation framework
+- 🎯 Hunting on **HackerOne**
+- 📖 Learning **exploit development**
+
+---
+
+### ⚡ Principles
+
+```
+• Responsible Disclosure
+• Automation First
+• Security by Design
+• Continuous Learning
+```
+
+---
+
 ### 🛠 Arsenal
+
+**Languages**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+
+**Security**
+
 ![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=flat-square&logo=burpsuite&logoColor=white)
-![Nuclei](https://img.shields.io/badge/Nuclei-000000?style=flat-square&logo=projectdiscovery&logoColor=white)
+![Nuclei](https://img.shields.io/badge/Nuclei-111111?style=flat-square&logo=projectdiscovery&logoColor=white)
 ![Nmap](https://img.shields.io/badge/Nmap-004B87?style=flat-square&logo=nmap&logoColor=white)
+![ffuf](https://img.shields.io/badge/ffuf-FF0000?style=flat-square&logo=ffuf&logoColor=white)
+
+**Platforms**
+
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+
+---
+
+### 📦 Featured Project
+
+## [BountyHunt](https://github.com/bess1lie/bounthunt)
+
+Open source bug bounty automation framework.
+
+```
+✔ Recon orchestration
+✔ Scope-aware scanning
+✔ Diff monitoring
+✔ HTML reports
+✔ Docker support
+✔ CI/CD
+✔ 90+ tests
+✔ Type hints
+```
+
+---
 
 ### 🎯 Focus Areas
 
-- **Web Application Security** — IDOR, SSRF, XSS, SQLi, CSRF
-- **Subdomain Takeover** — DNS misconfigurations, expired records
-- **Authentication Abuse** — OAuth flaws, JWT attacks, session hijacking
-- **Info Leakage** — exposed endpoints, misconfigured S3 buckets, WordPress disclosures
+| Area | Examples |
+|------|----------|
+| **Web Security** | IDOR, SSRF, XSS, SQLi, CSRF |
+| **Subdomain Takeover** | DNS misconfigurations, expired records |
+| **Auth Abuse** | OAuth flaws, JWT attacks, session hijacking |
+| **Info Leakage** | Exposed endpoints, misconfigured S3, WordPress disclosures |
 
-### 📦 Projects
-
-| Project | Description |
-|---------|-------------|
-| [bounthunt](https://github.com/bess1lie/bounthunt) | Bug bounty automation platform — recon, scanning, reporting |
+---
 
 ### 📊 GitHub Stats
 
 ![Stats](https://github-readme-stats.vercel.app/api?username=bess1lie&show_icons=true&theme=dark&hide_border=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bess1lie&layout=compact&theme=dark&hide_border=true)
 
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=bess1lie&theme=react-dark&hide_border=true)
+
+---
+
+### 🏆 Highlights
+
+- `HackerOne` — active bug bounty hunting
+- `Open source` — public security tools
+- `Research` — vulnerability discovery & disclosure
+
 ---
 
 ```
-$ echo "stay curious, stay persistent"
+$ echo "Automate the repetitive. Verify the important."
 ```
