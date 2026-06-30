@@ -11,7 +11,8 @@ Building open source tools for reconnaissance, vulnerability discovery and workf
 
 ### 📌 Currently
 
-- 🔨 Improving **BountyHunt** — bug bounty automation framework
+- 🔨 **BountyHunt** v1.1.0 — bug bounty automation framework
+- ⚡ **gqlhunter** v0.2.0 — GraphQL recon & analysis CLI
 - 🎯 Hunting on **HackerOne**
 - 📖 Learning **exploit development**
 
@@ -51,21 +52,28 @@ Building open source tools for reconnaissance, vulnerability discovery and workf
 
 ---
 
-### 📦 Featured Project
+### 📦 Featured Projects
 
 ## [BountyHunt](https://github.com/bess1lie/bounthunt)
 
-Open source bug bounty automation framework.
+Bug bounty automation framework — recon orchestration, scope-aware scanning, diff monitoring.
 
 ```
-✔ Recon orchestration
-✔ Scope-aware scanning
-✔ Diff monitoring
-✔ HTML reports
-✔ Docker support
-✔ CI/CD
-✔ 90+ tests
-✔ Type hints
+✔ Recon orchestration         ✔ Scope-aware scanning
+✔ Diff monitoring             ✔ HTML reports
+✔ Checkpoint/resume           ✔ Docker support
+✔ 90+ tests                   ✔ Type hints
+```
+
+## [gqlhunter](https://github.com/bess1lie/gqlhunter)
+
+GraphQL recon & analysis CLI — schema discovery, risk classification, auth analysis, dashboard.
+
+```
+✔ Endpoint discovery          ✔ Introspection + depth control
+✔ Risk classification         ✔ Auth bypass analysis
+✔ Query variants              ✔ Web dashboard
+✔ 195+ tests                  ✔ SARIF export
 ```
 
 ---
