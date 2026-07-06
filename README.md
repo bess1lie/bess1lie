@@ -22,8 +22,8 @@
 ### 📊 Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=bess1lie&show_icons=true&hide_title=true&hide_border=true&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=3b82f6&text_color=c9d1d9" height="160">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bess1lie&layout=compact&hide_title=true&hide_border=true&theme=dark&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=6" height="160">
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=bess1lie&show_icons=true&hide_title=true&hide_border=true&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=3b82f6&text_color=c9d1d9" height="160">
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=bess1lie&layout=compact&hide_title=true&hide_border=true&theme=dark&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=6" height="160">
 </p>
 
 ---
