@@ -1,25 +1,29 @@
 # 👋 bess1lie · detection‑only security tooling
 
-**Security Engineer** · **Bug Bounty Hunter** · **Open Source** · **Almaty**
+**Security Engineer · Bug Bounty Hunter · Open Source · Almaty**
 
-Building fast, scope-aware security tools for bug hunters and infrastructure defenders. Philosophy: **detection‑only, never exploitation**.
+Building detection‑first, scope‑aware security CLIs for bug hunters and security engineers.
 
 ---
 
 ## 🛠 Projects
 
-| Tool | Description |
-|------|-------------|
-| 🔍 **[apihunter](https://github.com/bess1lie/apihunter)** | REST API security testing CLI — OpenAPI discovery, auth audit, heuristic scanning, multi-format reports (HTML/MD/SARIF) |
-| 🎯 **[bounthunt](https://github.com/bess1lie/bounthunt)** | Bug bounty reconnaissance & automation — subdomain enumeration, endpoint discovery, parameter fuzzing, reporting |
-| 🚀 **[gqlhunter](https://github.com/bess1lie/gqlhunter)** | GraphQL security testing — introspection extraction, field fuzzing, depth analysis, persisted queries support |
+| Project | Description | Status |
+|---------|-------------|--------|
+| 🔍 [**apihunter**](https://github.com/bess1lie/apihunter) | REST API security testing: OpenAPI discovery, auth audit, heuristic scanning, HTML/Markdown/SARIF reports | ✅ Active |
+| 🎯 [**bounthunt**](https://github.com/bess1lie/bounthunt) | Bug bounty orchestration: subdomain enumeration, endpoint discovery, parameter brute‑force, automated reports | ✅ Active |
+| 🚀 [**gqlhunter**](https://github.com/bess1lie/gqlhunter) | GraphQL recon & analysis: introspection extraction, field fuzzing, depth analysis, persisted queries | ✅ Active |
 
 ---
 
-## 📊 GitHub Stats
+## 🧠 Philosophy
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=bess1lie&show_icons=true&theme=tokyonight&hide_border=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bess1lie&layout=compact&theme=tokyonight&hide_border=true)
+- 🔍 **Detection only, never exploitation** — recon and analysis, never payloads.
+- 🛡 **Scope‑aware** — every action gated by YAML scope file.
+- 📂 **Open formats** — SQLite, Markdown, HTML, JSON, SARIF 2.1.0.
+- 💚 **Open source** — MIT licensed, contributions welcome.
+
+---
 
 ## 🌐 Connect
 
@@ -30,6 +34,4 @@ Building fast, scope-aware security tools for bug hunters and infrastructure def
 
 ---
 
-<p align="center">
-<i>Detection only · Scope aware · Open source forever · Built in Almaty</i>
-</p>
+*MIT licensed · detection‑only security tooling · Almaty, Kazakhstan*
