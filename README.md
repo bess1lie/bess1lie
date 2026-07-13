@@ -1,9 +1,11 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,20&height=220&section=header&text=bess1lie&fontSize=65&fontColor=e6edf3&desc=detection-only%20%C2%B7%20scope-aware%20%C2%B7%20open%20source&descSize=15&descAlignY=58" width="100%">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,20&height=200§ion=header&text=bess1lie&fontSize=60&fontColor=e6edf3&animation=fadeIn" width="100%">
 </p>
 
 <p align="center">
   <b>Security Engineer · Bug Bounty Hunter · Almaty</b>
+  <br>
+  <sub>detection-only · scope-aware · open source</sub>
   <br>
   <sub><i>Building detection-first security CLIs for bug hunters and security engineers.</i></sub>
 </p>
@@ -16,7 +18,6 @@
   <a href="https://twitter.com/bess1lie">twitter</a> ·
   <a href="https://linkedin.com/in/bess1lie">linkedin</a>
 </p>
-
 ---
 
 ## projects
