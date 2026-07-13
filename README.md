@@ -107,24 +107,6 @@
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=bess1lie&show_icons=true&include_all_commits=true&count_private=true&hide_title=true&hide_border=true&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=3fb950&text_color=c9d1d9&border_color=30363d" height="160">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=bess1lie&layout=compact&hide_title=true&hide_border=true&theme=dark&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&border_color=30363d&langs_count=8" height="160">
-
-  <br>
-
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=bess1lie&hide_border=true&theme=dark&background=0d1117&stroke=30363d&ring=58a6ff&fire=f0883e&currStreakNum=e6edf3&sideNums=3fb950&currStreakLabel=58a6ff&sideLabels=8b949e&dates=6e7681" height="160">
-  <img src="https://github-profile-trophy.vercel.app/?username=bess1lie&no-frame=true&no-bg=true&theme=onedark&column=4&margin-w=12&margin-h=12" height="160">
-
-</div>
-
-<br>
-
----
-
 ## 🛠 Tech Stack
 
 <div align="center">
@@ -196,6 +178,24 @@
     </td>
   </tr>
 </table>
+
+</div>
+
+<br>
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=bess1lie&show_icons=true&include_all_commits=true&count_private=true&hide_title=true&hide_border=true&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=3fb950&text_color=c9d1d9&border_color=30363d" height="160">
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=bess1lie&layout=compact&hide_title=true&hide_border=true&theme=dark&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&border_color=30363d&langs_count=8" height="160">
+
+  <br>
+
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=bess1lie&hide_border=true&theme=dark&background=0d1117&stroke=30363d&ring=58a6ff&fire=f0883e&currStreakNum=e6edf3&sideNums=3fb950&currStreakLabel=58a6ff&sideLabels=8b949e&dates=6e7681" height="160">
+  <img src="https://github-profile-trophy.vercel.app/?username=bess1lie&no-frame=true&no-bg=true&theme=onedark&column=4&margin-w=12&margin-h=12" height="160">
 
 </div>
 
