@@ -1,9 +1,3 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=12,14,20&amp;height=220&amp;section=header&amp;text=bess1lie&amp;fontSize=65&amp;fontColor=e6edf3&amp;desc=detection-only%20%C2%B7%20scope-aware%20%C2%B7%20open%20source&amp;descSize=15&amp;descAlignY=58">
-  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=12,14,20&amp;height=220&amp;section=header&amp;text=bess1lie&amp;fontSize=65&amp;fontColor=1f2328&amp;desc=detection-only%20%C2%B7%20scope-aware%20%C2%B7%20open%20source&amp;descSize=15&amp;descAlignY=58">
-  <img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=12,14,20&amp;height=220&amp;section=header&amp;text=bess1lie&amp;fontSize=65&amp;fontColor=e6edf3&amp;desc=detection-only%20%C2%B7%20scope-aware%20%C2%B7%20open%20source&amp;descSize=15&amp;descAlignY=58" width="100%">
-</picture>
-
 <p align="center">
   <b>Security Engineer · Bug Bounty Hunter · Almaty</b>
   <br>
@@ -104,9 +98,3 @@
 <p align="center">
   <sub>MIT licensed · detection-only security tooling · Almaty</sub>
 </p>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=12,14,20&amp;height=80&amp;section=footer">
-  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=12,14,20&amp;height=80&amp;section=footer">
-  <img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=12,14,20&amp;height=80&amp;section=footer" width="100%">
-</picture>
