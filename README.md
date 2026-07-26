@@ -4,7 +4,7 @@
   <br><br>
   <h1>bess1lie</h1>
   <p>
-    <code>Security Engineer · Bug Bounty Hunter · Open Source · Almaty</code>
+    <code>Security Engineer · Bug Bounty Hunter · Open Source</code>
   </p>
   <p>
     <img src="https://img.shields.io/badge/detection–only-3fb950?style=flat-square">
@@ -28,12 +28,7 @@
   <a href="https://github.com/bess1lie">
     <img src="https://img.shields.io/badge/GitHub-bess1lie-181717?style=for-the-badge&logo=github" alt="GitHub">
   </a>
-  <a href="https://twitter.com/bess1lie">
-    <img src="https://img.shields.io/badge/Twitter-@bess1lie-1DA1F2?style=for-the-badge&logo=twitter" alt="Twitter">
-  </a>
-  <a href="https://linkedin.com/in/bess1lie">
-    <img src="https://img.shields.io/badge/LinkedIn-bess1lie-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn">
-  </a>
+
 </div>
 
 ---
@@ -156,16 +151,13 @@
   <a href="https://github.com/bess1lie/bounthunt"><code>bounthunt</code></a>
   &nbsp;&middot;&nbsp;
   <a href="https://github.com/bess1lie/gqlhunter"><code>gqlhunter</code></a>
-  &nbsp;&middot;&nbsp;
-  <a href="https://twitter.com/bess1lie"><code>twitter</code></a>
-  &nbsp;&middot;&nbsp;
-  <a href="https://linkedin.com/in/bess1lie"><code>linkedin</code></a>
+
 </p>
 
 ---
 
 <div align="center">
-  <sub>MIT licensed · detection-only security tooling · Almaty</sub>
+  <sub>MIT licensed · detection-only security tooling</sub>
   <br>
   <sub>✦ built with Python · designed for security engineers ✦</sub>
 </div>
