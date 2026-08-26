@@ -75,8 +75,8 @@ GraphQL recon & analysis — 18-path discovery, introspection with depth control
 </p>
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=bess1lie&bg_color=0d1117&color=58a6ff&line=3fb950&point=58a6ff&area=true&area_color=3fb950&hide_border=true&width=100%25">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=bess1lie&bg_color=f6f8fa&color=0969da&line=1a7f37&point=0969da&area=true&area_color=1a7f37&hide_border=true&width=100%25" alt="activity" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=bess1lie&theme=github-dark&bg_color=0d1117&color=58a6ff&line=3fb950&point=58a6ff&area=true&area_color=3fb950&hide_border=true&width=100%">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=bess1lie&theme=github&bg_color=f6f8fa&color=0969da&line=1a7f37&point=0969da&area=true&area_color=1a7f37&hide_border=true&width=100%" alt="activity" width="100%">
   </picture>
 </p>
 
@@ -85,7 +85,7 @@ GraphQL recon & analysis — 18-path discovery, introspection with depth control
 ## Connect
 
 [`site`](https://bess1lie.github.io) · [`apihunter`](https://github.com/bess1lie/apihunter) · [`bounthunt`](https://github.com/bess1lie/bounthunt) · [`gqlhunter`](https://github.com/bess1lie/gqlhunter)  
-[LinkedIn](https://linkedin.com/in/bess1lie) · [GitHub](https://github.com/bess1lie)
+[GitHub](https://github.com/bess1lie)
 
 ---
 
