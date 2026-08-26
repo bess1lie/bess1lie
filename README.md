@@ -2,9 +2,9 @@
 
 # bess1lie
 
-**security engineer** · **bug bounty** · **detection-first tooling**
+**security engineer** · **bug bounty** · **security tooling**
 
-Building detection-first security tooling for API, GraphQL and reconnaissance workflows.
+API, GraphQL and reconnaissance tooling built around detection and analysis.
 
 </div>
 
@@ -26,7 +26,7 @@ $ gqlhunter scan target.example/graphql --scope scope.yaml
 
 <br>
 
-## Selected work
+## Work
 
 ### [apihunter](https://github.com/bess1lie/apihunter)
 
