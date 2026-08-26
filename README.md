@@ -1,79 +1,107 @@
+<div align="center">
+
 # bess1lie
 
-`Security Engineer` · `Bug Bounty Hunter` · `Security Tooling`
+**security engineer** · **bug bounty** · **detection-first tooling**
 
-Building detection-first, scope-aware CLIs for recon, API security and GraphQL analysis — Python 3.11+, Typer, Rich, HTTPX.
+Building detection-first security tooling for API, GraphQL and reconnaissance workflows.
 
----
+</div>
 
-## Selected Work
+<br>
 
-### [`apihunter`](https://github.com/bess1lie/apihunter)
-REST API security testing CLI — OpenAPI/Swagger discovery, authentication auditing, heuristic scanning (IDOR, CORS, rate limiting, info disclosure), multi-format reports (HTML/Markdown/SARIF), SQLite storage, scope-aware.
+```text
+$ gqlhunter discover target.example --scope scope.yaml
+[+] GraphQL endpoint discovered
+[+] Schema introspection complete
+[+] 42 types, 18 queries, 7 mutations
+[+] Risk analysis complete
 
-`Python` `Typer` `Rich` `HTTPX` `Jinja2` `PyYAML` `SQLite`
+$ gqlhunter scan target.example/graphql --scope scope.yaml
+[+] Introspection enabled (depth 5)
+[+] 42 types, 18 queries, 7 mutations stored
+[!] Risk: 3 high (IDOR), 2 medium
+[+] SARIF report written to gqlhunter.sarif
+```
 
-[![CI](https://github.com/bess1lie/apihunter/actions/workflows/ci.yml/badge.svg)](https://github.com/bess1lie/apihunter/actions/workflows/ci.yml) 243 tests passing · 86% coverage
+<br>
 
----
+## Selected work
 
-### [`bounthunt`](https://github.com/bess1lie/bounthunt)
-Bug bounty recon orchestration — subfinder/dnsx/httpx/naabu/nuclei/katana pipeline, YAML scope guard (allow/deny), checkpoint/resume, diff monitoring, SQLite history, Dockerized.
+### [apihunter](https://github.com/bess1lie/apihunter)
 
-`Python` `Typer` `Rich` `HTTPX` `Jinja2` `PyYAML` `SQLite` `Docker`
+REST API security CLI — OpenAPI discovery, authentication auditing, heuristic scanning (IDOR, CORS, rate limiting), SARIF/HTML/Markdown reports, scope-aware.
 
-[![CI](https://github.com/bess1lie/bounthunt/actions/workflows/ci.yml/badge.svg)](https://github.com/bess1lie/bounthunt/actions/workflows/ci.yml) 91 tests passing
+`OpenAPI` `IDOR` `CORS` `SARIF`
 
----
+![apihunter](https://raw.githubusercontent.com/bess1lie/apihunter/main/docs/screenshots/scan.svg)
 
-### [`gqlhunter`](https://github.com/bess1lie/gqlhunter)
-GraphQL recon & analysis — 18-path discovery, introspection with depth control, risk classification (IDOR/BOLA), auth comparison, schema diff, SARIF 2.1.0 export, built-in dashboard.
+**243 tests · 86% coverage · CI passing**
 
-`Python` `Typer` `Rich` `HTTPX` `aiosqlite` `Jinja2` `PyYAML` `GraphQL`
+[View repository →](https://github.com/bess1lie/apihunter)
 
-[![CI](https://github.com/bess1lie/gqlhunter/actions/workflows/ci.yml/badge.svg)](https://github.com/bess1lie/gqlhunter/actions/workflows/ci.yml) 202 tests passing · SARIF 2.1.0 export
+<br>
 
----
+### [bounthunt](https://github.com/bess1lie/bounthunt)
 
-## Current Focus
+Bug bounty recon orchestration — subfinder→dnsx→httpx→naabu→nuclei→katana pipeline, YAML scope guard, checkpoint/resume, diff monitoring, Dockerized.
 
-Finishing gqlhunter SARIF 2.1.0 compliance and dashboard hardening. Actively hunting on Standoff 365 (Broken Access Control, DOM XSS submissions).
+`Recon` `Pipeline` `Scope` `Docker`
 
----
+![bounthunt](https://raw.githubusercontent.com/bess1lie/bounthunt/main/screenshots/terminal.png)
 
-## Evidence
+**91 tests · CI passing**
 
-| Project | Tests | Coverage | CI | Key Feature |
-|---------|-------|----------|----|-------------|
-| [`apihunter`](https://github.com/bess1lie/apihunter) | 243 passing | 86% | ✅ | OpenAPI discovery + SARIF |
-| [`bounthunt`](https://github.com/bess1lie/bounthunt) | 91 passing | — | ✅ | Recon orchestration + diff |
-| [`gqlhunter`](https://github.com/bess1lie/gqlhunter) | 202 passing | — | ✅ | GraphQL risk + SARIF 2.1.0 |
-| [`bess1lie.github.io`](https://bess1lie.github.io) | — | — | — | Interactive terminal, dark/light |
+[View repository →](https://github.com/bess1lie/bounthunt)
 
----
+<br>
 
-## Engineering Principles
+### [gqlhunter](https://github.com/bess1lie/gqlhunter)
 
-| Principle | Implementation |
-|-----------|----------------|
-| Detection only | Recon & analysis only — never payloads or exploitation |
-| Scope-aware | Every request gated by `scope.yaml` allow/deny lists |
-| Open formats | SQLite, HTML, Markdown, SARIF 2.1.0 |
-| Open source | MIT licensed, community-driven |
+GraphQL recon & risk analysis — introspection with depth control, IDOR/BOLA classification, schema diff, SARIF 2.1.0 export, built-in dashboard.
 
----
+`GraphQL` `IDOR` `SARIF` `Dashboard`
+
+![gqlhunter](https://raw.githubusercontent.com/bess1lie/gqlhunter/main/screenshots/dashboard-preview.png)
+
+**202 tests · CI passing · SARIF 2.1.0**
+
+[View repository →](https://github.com/bess1lie/gqlhunter)
+
+<br>
+
+## What I build
+
+`API Security` · `Recon Automation` · `GraphQL Security` · `Security Automation` · `Detection Tooling`
+
+<br>
+
+## Principles
+
+**Detection only** — recon & analysis, never payloads or exploitation
+
+**Scope-aware** — every request gated by `scope.yaml` allow/deny
+
+**Open formats** — SQLite · HTML · Markdown · SARIF 2.1.0
+
+**Open source** — MIT licensed, community-driven
+
+<br>
 
 ## Stack
 
-`Python 3.11+` `Typer` `Rich` `HTTPX` `PyYAML` `Jinja2` `SQLite` `aiosqlite` `GraphQL` `OpenAPI` `SARIF` `Docker` `GitHub Actions`
+`Python 3.11+` `Typer` `Rich` `HTTPX` `PyYAML` `Jinja2` `SQLite` `aiosqlite` `GraphQL` `OpenAPI` `Docker` `GitHub Actions`
 
----
+<br>
 
-## Connect
+## Now
 
-[`site`](https://bess1lie.github.io) · [`apihunter`](https://github.com/bess1lie/apihunter) · [`bounthunt`](https://github.com/bess1lie/bounthunt) · [`gqlhunter`](https://github.com/bess1lie/gqlhunter)  
-[GitHub](https://github.com/bess1lie)
+Finishing gqlhunter SARIF 2.1.0 compliance & dashboard hardening. Active on Standoff 365 (Broken Access Control, DOM XSS submissions).
 
----
+<br>
 
-Almaty, Kazakhstan · detection-first security tooling · MIT licensed
+<div align="center">
+
+Almaty, Kazakhstan · [site](https://bess1lie.github.io) · [apihunter](https://github.com/bess1lie/apihunter) · [bounthunt](https://github.com/bess1lie/bounthunt) · [gqlhunter](https://github.com/bess1lie/gqlhunter)
+
+</div>
