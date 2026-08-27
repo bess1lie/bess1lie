@@ -4,6 +4,7 @@
 
 [![Site](https://img.shields.io/badge/site-bess1lie.github.io-8b949e?style=for-the-badge&labelColor=0d1117)](https://bess1lie.github.io)
 [![GitHub](https://img.shields.io/badge/github-bess1lie-8b949e?style=for-the-badge&logo=github&logoColor=0d1117&labelColor=c9d1d9)](https://github.com/bess1lie)
+[![Email](https://img.shields.io/badge/email-bess1iework@gmail.com-8b949e?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117)](mailto:bess1iework@gmail.com)
 
 `recon` · `api security` · `graphql` — built to detect, never to exploit.
 
@@ -57,18 +58,9 @@ Building **detection-first, scope-aware** security CLIs — recon automation, AP
 
 </details>
 
-## 📊 Stats
-
-<p align="center">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=bess1lie&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=8b949e&text_color=c9d1d9&icon_color=8b949e&count_private=true&include_all_commits=true" height="150" />
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=bess1lie&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=8b949e&text_color=c9d1d9&langs_count=6" height="150" />
-  <br>
-  <img src="https://streak-stats.demolab.com?user=bess1lie&theme=tokyonight&hide_border=true&background=0d1117" width="100%" />
-</p>
-
 <div align="center">
 
-[site](https://bess1lie.github.io) · [apihunter](https://github.com/bess1lie/apihunter) · [bounthunt](https://github.com/bess1lie/bounthunt) · [gqlhunter](https://github.com/bess1lie/gqlhunter) · [github](https://github.com/bess1lie)
+[site](https://bess1lie.github.io) · [apihunter](https://github.com/bess1lie/apihunter) · [bounthunt](https://github.com/bess1lie/bounthunt) · [gqlhunter](https://github.com/bess1lie/gqlhunter) · [github](https://github.com/bess1lie) · [email](mailto:bess1iework@gmail.com)
 
 </div>
 
