@@ -63,7 +63,7 @@ Building **detection-first, scope-aware** security CLIs — recon automation, AP
   <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=bess1lie&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=8b949e&text_color=c9d1d9&icon_color=8b949e&count_private=true&include_all_commits=true" height="150" />
   <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=bess1lie&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=8b949e&text_color=c9d1d9&langs_count=6" height="150" />
   <br>
-  <img src="https://streak-stats.demolab.com?user=bess1lie&theme=tokyonight&hide_border=true&background=0d1117&stroke=8b949e&ring=8b949e&fire=8b949e&currStreakNum=c9d1d9&sideNums=8b949e&currStreakLabel=8b949e&sideLabels=8b949e&dates=6e7681" width="100%" />
+  <img src="https://streak-stats.demolab.com?user=bess1lie&theme=tokyonight&hide_border=true&background=0d1117" width="100%" />
 </p>
 
 <div align="center">
