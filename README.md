@@ -19,9 +19,9 @@ Focus: recon automation, API & GraphQL attack surface. Every tool is gated by `s
 
 ## 🚀 Selected Work
 
-<a href="https://github.com/bess1lie/apihunter"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bess1lie&repo=apihunter&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff" alt="apihunter" /></a>
-<a href="https://github.com/bess1lie/bounthunt"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bess1lie&repo=bounthunt&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff" alt="bounthunt" /></a>
-<a href="https://github.com/bess1lie/gqlhunter"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bess1lie&repo=gqlhunter&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff" alt="gqlhunter" /></a>
+<a href="https://github.com/bess1lie/apihunter"><img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=bess1lie&repo=apihunter&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff" alt="apihunter" /></a>
+<a href="https://github.com/bess1lie/bounthunt"><img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=bess1lie&repo=bounthunt&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff" alt="bounthunt" /></a>
+<a href="https://github.com/bess1lie/gqlhunter"><img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=bess1lie&repo=gqlhunter&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff" alt="gqlhunter" /></a>
 
 **apihunter** — REST API security CLI. OpenAPI discovery, auth auditing, `IDOR`/`CORS`/`rate-limit` heuristics. `243 tests · 86% coverage`
 <br>
@@ -62,10 +62,10 @@ Focus: recon automation, API & GraphQL attack surface. Every tool is gated by `s
 ## 📊 Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=bess1lie&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff&count_private=true&include_all_commits=true" height="150" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bess1lie&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=6" height="150" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=bess1lie&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff&count_private=true&include_all_commits=true" height="150" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=bess1lie&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=6" height="150" />
   <br>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=bess1lie&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=58a6ff&line=58a6ff&point=ff0078&area=true" width="100%" />
+  <img src="https://streak-stats.demolab.com?user=bess1lie&theme=tokyonight&hide_border=true&background=0d1117&stroke=58a6ff&ring=58a6ff&fire=ff0078&currStreakNum=c9d1d9&sideNums=c9d1d9&currStreakLabel=58a6ff&sideLabels=c9d1d9&dates=c9d1d9" width="100%" />
 </p>
 
 <div align="center">
