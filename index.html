@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Security engineer focused on recon automation, API security, and GraphQL attack-surface analysis."
+    />
+    <title>bess1lie | Security Engineer</title>
+    <style>
+      :root {
+        --bg: #0d1117;
+        --bg-2: #101821;
+        --panel: #161b22;
+        --panel-soft: #1d2733;
+        --text: #e6edf3;
+        --muted: #8b949e;
+        --line: rgba(139, 148, 158, 0.24);
+        --accent: #c9d1d9;
+        --accent-2: #a5b4fc;
+        --green: #7ee787;
+        --shadow: rgba(0, 0, 0, 0.35);
+      }
+
+      * { box-sizing: border-box; }
+
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at top, rgba(165, 180, 252, 0.14), transparent 26%),
+          linear-gradient(180deg, var(--bg) 0%, #0a0f17 100%);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      a { color: var(--text); text-decoration: none; }
+      img { max-width: 100%; display: block; }
+
+      .container {
+        width: min(1160px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        backdrop-filter: blur(12px);
+        background: rgba(13, 17, 23, 0.76);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 72px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+
+      .brand-mark {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #d8dee9, #8b949e);
+        box-shadow: 0 0 18px rgba(201, 209, 217, 0.6);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .nav-links a:hover { color: var(--text); }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        padding: 0.9rem 1.35rem;
+        border: 1px solid var(--line);
+        font-weight: 600;
+        transition: 0.2s ease;
+      }
+
+      .button:hover {
+        transform: translateY(-1px);
+        border-color: rgba(201, 209, 217, 0.35);
+      }
+
+      .button.primary {
+        background: rgba(201, 209, 217, 0.06);
+        color: var(--text);
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--muted);
+      }
+
+      .hero {
+        padding: 90px 0 52px;
+      }
+
+      .hero-inner {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        gap: 38px;
+        align-items: center;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(139, 148, 158, 0.08);
+        border: 1px solid var(--line);
+        color: var(--muted);
+        border-radius: 999px;
+        padding: 0.46rem 0.8rem;
+        font-size: 0.76rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--green);
+        box-shadow: 0 0 12px rgba(126, 231, 135, 0.8);
+      }
+
+      h1 {
+        font-size: clamp(2.7rem, 6vw, 5rem);
+        line-height: 1.02;
+        letter-spacing: -0.06em;
+        margin: 18px 0 16px;
+      }
+
+      .hero h1 .muted {
+        color: var(--muted);
+        font-weight: 500;
+      }
+
+      .lead {
+        max-width: 760px;
+        font-size: 1.1rem;
+        color: var(--muted);
+        margin: 0 0 28px;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-bottom: 24px;
+      }
+
+      .stack-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.015);
+        color: var(--muted);
+        padding: 0.52rem 0.78rem;
+        font-size: 0.76rem;
+      }
+
+      .hero-card {
+        background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)), rgba(22, 27, 34, 0.9);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 22px;
+        box-shadow: 0 28px 50px var(--shadow);
+      }
+
+      .mini-grid {
+        display: grid;
+        gap: 12px;
+      }
+
+      .mini-box {
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.014);
+        padding: 16px 18px;
+      }
+
+      .mini-box small {
+        display: block;
+        color: var(--muted);
+        margin-bottom: 10px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+      }
+
+      .mini-box strong {
+        display: block;
+        font-size: 1.14rem;
+      }
+
+      .section {
+        padding: 56px 0;
+      }
+
+      .section-header {
+        margin-bottom: 26px;
+      }
+
+      .section-header h2 {
+        margin: 0 0 10px;
+        font-size: clamp(1.9rem, 3vw, 2.8rem);
+        letter-spacing: -0.05em;
+      }
+
+      .section-header p {
+        margin: 0;
+        max-width: 800px;
+        color: var(--muted);
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 28px;
+      }
+
+      .card {
+        background: rgba(22, 27, 34, 0.9);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 24px;
+        box-shadow: 0 16px 30px rgba(0, 0, 0, 0.16);
+      }
+
+      .card p {
+        color: var(--muted);
+        margin: 0;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .stat {
+        border: 1px solid var(--line);
+        background: rgba(255,255,255,0.015);
+        border-radius: 18px;
+        padding: 18px 16px;
+      }
+
+      .stat strong {
+        display: block;
+        font-size: clamp(1.3rem, 2vw, 2rem);
+        margin-bottom: 8px;
+      }
+
+      .stat span {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .project-card {
+        background: rgba(22, 27, 34, 0.9);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        transition: transform 0.2s ease, border-color 0.2s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-3px);
+        border-color: rgba(201, 209, 217, 0.36);
+      }
+
+      .project-card .project-top {
+        padding: 18px 20px 12px;
+      }
+
+      .project-tag {
+        display: inline-block;
+        color: var(--muted);
+        font-size: 0.7rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 0.35rem 0.7rem;
+      }
+
+      .project-card h3 {
+        margin: 16px 0 10px;
+        font-size: 1.32rem;
+      }
+
+      .project-card p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .project-card .project-meta {
+        margin-top: auto;
+        border-top: 1px solid var(--line);
+        padding: 14px 20px 18px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .focus-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .feature {
+        background: rgba(22, 27, 34, 0.9);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 22px;
+      }
+
+      .feature h3 {
+        margin: 0 0 12px;
+        font-size: 1.2rem;
+      }
+
+      .feature ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+      }
+
+      .principles {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .principle {
+        background: rgba(22, 27, 34, 0.9);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        padding: 18px 18px 16px;
+      }
+
+      .principle strong {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 1.02rem;
+      }
+
+      .principle span {
+        color: var(--muted);
+      }
+
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        align-items: center;
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 28px 0 44px;
+        color: var(--muted);
+      }
+
+      @media (max-width: 940px) {
+        .hero-inner,
+        .about-grid,
+        .projects,
+        .focus-grid,
+        .principles {
+          grid-template-columns: 1fr;
+        }
+
+        .nav-links { display: none; }
+      }
+
+      @media (max-width: 620px) {
+        .stats { grid-template-columns: 1fr; }
+
+        .hero { padding-top: 60px; }
+
+        .actions {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .button {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a href="#top" class="brand" aria-label="bess1lie home">
+          <span class="brand-mark"></span>
+          <span>bess1lie</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#focus">Focus</a>
+          <a href="#principles">Principles</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="button secondary" href="https://github.com/bess1lie" target="_blank" rel="noreferrer">
+          GitHub
+        </a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div>
+            <span class="eyebrow">Security Engineer</span>
+
+            <h1>
+              Security tooling for
+              <span class="muted">recon, API, and GraphQL</span>
+            </h1>
+
+            <p class="lead">
+              I build detection-first security tooling for attack-surface discovery, validation, and visibility.
+              My work focuses on scope-aware recon workflows, API risk analysis, and GraphQL exposure assessment.
+            </p>
+
+            <div class="actions">
+              <a class="button primary" href="#projects">View Projects</a>
+              <a class="button secondary" href="#contact">Contact</a>
+            </div>
+
+            <div class="stack-row" aria-label="Technology tags">
+              <span class="pill">recon</span>
+              <span class="pill">api security</span>
+              <span class="pill">graphql</span>
+              <span class="pill">scope-aware</span>
+              <span class="pill">open-source</span>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="mini-grid">
+              <div class="mini-box">
+                <small>Focus</small>
+                <strong>Detection-first tooling</strong>
+              </div>
+
+              <div class="mini-box">
+                <small>Primary areas</small>
+                <strong>Recon · API · GraphQL</strong>
+              </div>
+
+              <div class="mini-box">
+                <small>Design principle</small>
+                <strong>Visibility over exploitation</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>About</h2>
+            <p>
+              Security engineer focused on recon automation, API security, and GraphQL attack-surface analysis.
+              I build tools designed for visibility, validation, and transparent security research.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="card">
+              <p>
+                I design tooling that helps teams understand exposure, validate assumptions, and map risk across APIs and GraphQL surfaces.
+                My projects are built with scope-aware controls, clear outputs, and reproducible workflows.
+              </p>
+            </div>
+
+            <div class="stats">
+              <div class="stat">
+                <strong>Recon</strong>
+                <span>automation & workflow orchestration</span>
+              </div>
+              <div class="stat">
+                <strong>API</strong>
+                <span>auth, discovery, risk heuristics</span>
+              </div>
+              <div class="stat">
+                <strong>GraphQL</strong>
+                <span>introspection, schema, classification</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Projects</h2>
+            <p>
+              Open-source tooling built to help security teams map exposure without crossing into unsafe or exploitative workflows.
+            </p>
+          </div>
+
+          <div class="projects">
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-tag">API Security</span>
+                <h3>apihunter</h3>
+                <p>
+                  REST API security CLI for discovery, auth auditing, and heuristic checks around IDOR, CORS, and rate-limit issues.
+                </p>
+              </div>
+              <div class="project-meta">API discovery · auth review · risk heuristics</div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-tag">Recon</span>
+                <h3>bounthunt</h3>
+                <p>
+                  Recon orchestration pipeline combining multi-stage discovery with scoped execution and workflow monitoring.
+                </p>
+              </div>
+              <div class="project-meta">subfinder · dnsx · httpx · naabu · nuclei · katana</div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-tag">GraphQL</span>
+                <h3>gqlhunter</h3>
+                <p>
+                  GraphQL recon and risk analysis toolkit with introspection, schema diffing, and reporting for vulnerable patterns.
+                </p>
+              </div>
+              <div class="project-meta">schema diff · reporting · classification</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="focus" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Current focus</h2>
+            <p>
+              Improving tooling quality, reporting pipelines, and visibility into API and GraphQL exposures.
+            </p>
+          </div>
+
+          <div class="focus-grid">
+            <div class="feature">
+              <h3>Research</h3>
+              <ul>
+                <li>Broken access control patterns</li>
+                <li>DOM XSS exposure analysis</li>
+                <li>API auth and session validation issues</li>
+              </ul>
+            </div>
+
+            <div class="feature">
+              <h3>Engineering</h3>
+              <ul>
+                <li>CLI reliability and structured output</li>
+                <li>Dashboard/reporting improvements</li>
+                <li>Scope-aware execution and workflow safety</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="principles" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Principles</h2>
+            <p>
+              Tools should improve visibility, reduce uncertainty, and make security work more transparent and repeatable.
+            </p>
+          </div>
+
+          <div class="principles">
+            <div class="principle">
+              <strong>Detection-first</strong>
+              <span>Analysis and recon before exploitation, with explicit operational boundaries.</span>
+            </div>
+
+            <div class="principle">
+              <strong>Scope-aware</strong>
+              <span>Every workflow is constrained by policy, boundaries, and intent.</span>
+            </div>
+
+            <div class="principle">
+              <strong>Open formats</strong>
+              <span>SQLite, HTML, Markdown, and SARIF are used for transparency and interoperability.</span>
+            </div>
+
+            <div class="principle">
+              <strong>Open source</strong>
+              <span>Reproducible, inspectable tooling designed to be audited and extended.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Contact</h2>
+          </div>
+
+          <div class="contact">
+            <a class="button primary" href="mailto:bess1iework@gmail.com">Email</a>
+            <a class="button secondary" href="https://github.com/bess1lie" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button secondary" href="https://bess1lie.github.io" target="_blank" rel="noreferrer">Site</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        © 2026 bess1lie — detection-first · scope-aware · open-source
+      </div>
+    </footer>
+  </body>
+</html>
