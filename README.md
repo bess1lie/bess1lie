@@ -1,60 +1,68 @@
 <div align="center">
 
-# bess1lie
+# BESS1LIE
 
-<sup>Detection-first security tooling · scope-aware automation · open source</sup>
+<sup><strong>SECURITY TOOLING BUILDER</strong> · detection-first · scope-aware · open source</sup>
 
-[Site](https://bess1lie.github.io) · [Email](mailto:bess1iework@gmail.com) · [GitHub](https://github.com/bess1lie)
+[Site](https://bess1lie.github.io) &nbsp;·&nbsp; [Email](mailto:bess1iework@gmail.com) &nbsp;·&nbsp; [GitHub](https://github.com/bess1lie)
 
 </div>
 
 ---
 
-**About.** I build command-line security tooling — recon automation, API security, GraphQL analysis — with a detection-first, scope-aware posture: nothing runs against a target without an explicit allowlist, and every finding ships with reproducible evidence.
+## About
 
-**Also building.** Static web products and a demo portfolio for small businesses — barbershop, coffee shop, furniture store, salon, medical center, fitness, education, auto service — at [bess1lie.github.io](https://github.com/bess1lie/bess1lie.github.io).
+I build command-line security tooling for recon, API security and GraphQL analysis — scoped to run only with an explicit allowlist, with every finding shipped as reproducible evidence.<br>
+Also building a static web portfolio for small businesses — [bess1lie.github.io](https://bess1lie.github.io).
+
+<hr>
 
 ## Selected work
 
-### mutvera — mutation evidence for security tests
-Local, defensive mutation testing for the security tests of Python + FastAPI webhook receivers. Injects controlled defects into isolated copies of the project and re-runs the existing suite — showing which mutations your tests catch, and which they silently miss. MIT-licensed, local-first, RU/EN web UI.
+### MUTATION EVIDENCE
+**mutvera** — defensive mutation testing for the security tests of Python + FastAPI webhook receivers. Injects controlled defects into isolated project copies and re-runs your suite — showing which mutations your tests catch, and which they silently miss. MIT-licensed, local-first, RU/EN web UI.
 
-`git clone https://github.com/bess1lie/mutvera-public.git` · [GitHub](https://github.com/bess1lie/mutvera-public)
+`git clone https://github.com/bess1lie/mutvera-public.git` &nbsp;·&nbsp; [GitHub](https://github.com/bess1lie/mutvera-public)
 
-### apihunter — REST API security testing
-OpenAPI discovery (22 known paths), authentication analysis, 8 evidence-backed heuristic checks (BOLA/IDOR, CORS, auth bypass, rate limiting, injection probes, information disclosure), scope-gated execution, SQLite history, HTML/Markdown/SARIF reports.
+<hr>
 
-`pip install apihunter-bess1lie` · [GitHub](https://github.com/bess1lie/apihunter)
+### REST API SECURITY
+**apihunter** — OpenAPI discovery across 22 known paths, authentication analysis, 8 evidence-backed heuristic checks (BOLA/IDOR, CORS, auth bypass, rate limiting, injection probes, information disclosure), scope-gated execution, SQLite history, HTML/Markdown/SARIF reports.
 
-### bounthunt — scope-aware recon orchestration
-Chains subfinder → dnsx → httpx → naabu → nuclei → katana behind an allowlist gate. Diff monitoring of hosts/ports/findings across runs, checkpoint/resume for long campaigns, SQLite history, Docker, Telegram/Discord notifications.
+`pip install apihunter-bess1lie` &nbsp;·&nbsp; [GitHub](https://github.com/bess1lie/apihunter)
 
-`pip install bounthunt` · [GitHub](https://github.com/bess1lie/bounthunt)
+<hr>
 
-### gqlhunter — GraphQL security analysis
-Endpoint discovery (18 paths + POST introspection), IDOR/auth/depth risk classification, query variants, SARIF 2.1.0 export, local dashboard. CI enforces a ≥ 70% coverage gate on Python 3.11–3.13.
+### RECON AUTOMATION
+**bounthunt** — scoped recon orchestration. Chains subfinder → dnsx → httpx → naabu → nuclei → katana behind an allowlist gate. Diff monitoring across runs, checkpoint/resume for long campaigns, SQLite history, Docker, Telegram/Discord notifications.
 
-`pip install gqlhunter` · [GitHub](https://github.com/bess1lie/gqlhunter)
+`pip install bounthunt` &nbsp;·&nbsp; [GitHub](https://github.com/bess1lie/bounthunt)
 
-All three are MIT-licensed, CI-tested, and detection-first.
+<hr>
+
+### GRAPHQL SECURITY
+**gqlhunter** — endpoint discovery (18 paths + POST introspection), IDOR/auth/depth risk classification, query variants, SARIF 2.1.0 export, local dashboard. CI enforces a ≥ 70% coverage gate on Python 3.11–3.13.
+
+`pip install gqlhunter` &nbsp;·&nbsp; [GitHub](https://github.com/bess1lie/gqlhunter)
+
+<hr>
 
 ## How I work
 
-- **Detection before action** — analyse first; never exploit by default
+- **Evidence over opinions** — every finding ships with reproducible output
 - **Scope-aware by default** — no request without an explicit allow rule
-- **Evidence over assertions** — every finding carries reproducible output: SQLite, HTML/Markdown, SARIF
-- **Open formats** — inspectable, diffable, CI-friendly
+- **Open formats** — SQLite · HTML · Markdown · SARIF
 
 ## Stack
 
-Python · Typer · HTTPX · SQLite · Docker · GitHub Actions · GraphQL · OpenAPI / SARIF
+Python &nbsp;·&nbsp; Typer &nbsp;·&nbsp; HTTPX &nbsp;·&nbsp; SQLite &nbsp;·&nbsp; Docker &nbsp;·&nbsp; GitHub Actions &nbsp;·&nbsp; GraphQL
 
----
+<hr>
 
 <div align="center">
 
-**bess1lie** · detection-first · scope-aware · open source
+**bess1lie** &nbsp;·&nbsp; detection-first &nbsp;·&nbsp; scope-aware &nbsp;·&nbsp; open source
 
-[Site](https://bess1lie.github.io) · [Email](mailto:bess1iework@gmail.com) · [GitHub](https://github.com/bess1lie)
+[Site](https://bess1lie.github.io) &nbsp;·&nbsp; [Email](mailto:bess1iework@gmail.com) &nbsp;·&nbsp; [GitHub](https://github.com/bess1lie)
 
 </div>
