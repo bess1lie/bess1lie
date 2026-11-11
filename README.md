@@ -16,6 +16,11 @@
 
 ## Selected work
 
+### mutvera — mutation evidence for security tests
+Local, defensive mutation testing for the security tests of Python + FastAPI webhook receivers. Injects controlled defects into isolated copies of the project and re-runs the existing suite — showing which mutations your tests catch, and which they silently miss. MIT-licensed, local-first, RU/EN web UI.
+
+`git clone https://github.com/bess1lie/mutvera-public.git` · [GitHub](https://github.com/bess1lie/mutvera-public)
+
 ### apihunter — REST API security testing
 OpenAPI discovery (22 known paths), authentication analysis, 8 evidence-backed heuristic checks (BOLA/IDOR, CORS, auth bypass, rate limiting, injection probes, information disclosure), scope-gated execution, SQLite history, HTML/Markdown/SARIF reports.
 
