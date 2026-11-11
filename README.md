@@ -1,94 +1,34 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=140&section=header&text=bess1lie&fontSize=42&fontColor=8b949e&animation=fadeIn&fontAlignY=38&desc=security%20engineer&descFontSize=14&descFontColor=8b949e&fontAlignX=50&descAlign=50" alt="bess1lie banner" />
+# bess1lie
 
-<div align="center">
+I build detection-first security tooling — Python CLIs for recon automation, REST API security testing, and GraphQL security analysis. MIT-licensed, CI-tested, open source.
 
-[![Site](https://img.shields.io/badge/site-bess1lie.github.io-8b949e?style=for-the-badge&labelColor=0d1117)](https://bess1lie.github.io)
-[![GitHub](https://img.shields.io/badge/github-bess1lie-8b949e?style=for-the-badge&logo=github&logoColor=0d1117&labelColor=c9d1d9)](https://github.com/bess1lie)
-[![Email](https://img.shields.io/badge/email-bess1iework@gmail.com-8b949e?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117)](mailto:bess1iework@gmail.com)
-
-`security engineer` · `recon` · `api security` · `graphql`
-
-</div>
-
-## About
-
-Security engineer focused on recon automation, API security, and GraphQL attack-surface analysis.
-
-I build detection-first tooling for security research and validation workflows. My projects are scoped, transparent, and designed for visibility rather than exploitation.
-
-> detection-first · scope-aware · open-source
-
-## What I build
-
-I design tools that help security teams understand exposure, validate assumptions, and map risk across APIs and GraphQL surfaces.
-
-- Recon automation and workflow orchestration
-- API security analysis and auditing
-- GraphQL schema inspection and risk classification
-- Attack-surface discovery with scope-aware controls
-- Open, inspectable output formats for research and validation
+[Site](https://bess1lie.github.io) · [GitHub](https://github.com/bess1lie)
 
 ## Featured projects
 
-<a href="https://github.com/bess1lie/apihunter">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=bess1lie&repo=apihunter&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=c9d1d9&text_color=8b949e&icon_color=8b949e" />
-</a>
+| Project | What it does |
+|---|---|
+| **[apihunter](https://github.com/bess1lie/apihunter)** | REST API security testing for OpenAPI surfaces: discovery (22 known paths), authentication analysis, 8 heuristic checks (BOLA/IDOR, CORS, auth bypass, rate limiting, injection probes, info disclosure), scope-aware execution, SQLite persistence, HTML/Markdown/SARIF reports. PyPI: `pip install apihunter-bess1lie` |
+| **[bounthunt](https://github.com/bess1lie/bounthunt)** | Scope-aware recon orchestration for bug bounty programs: scope guard blocks out-of-scope targets, diff monitoring of hosts/ports/findings across runs, checkpoint/resume, SQLite persistence, HTML/Markdown reports, Telegram/Discord notifications, Docker. PyPI: `pip install bounthunt` |
+| **[gqlhunter](https://github.com/bess1lie/gqlhunter)** | GraphQL security analysis: endpoint discovery (18 paths), introspection-driven risk classification (IDOR/BOLA, auth gaps, depth/batching), query variants, SARIF output, local dashboard, CI with a ≥70% coverage gate. PyPI: `pip install gqlhunter` |
 
-<a href="https://github.com/bess1lie/bounthunt">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=bess1lie&repo=bounthunt&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=c9d1d9&text_color=8b949e&icon_color=8b949e" />
-</a>
+## Other work
 
-<a href="https://github.com/bess1lie/gqlhunter">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=bess1lie&repo=gqlhunter&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=c9d1d9&text_color=8b949e&icon_color=8b949e" />
-</a>
+**[bess1lie.github.io](https://github.com/bess1lie/bess1lie.github.io)** — personal site with live demo sites built for small businesses (barbershop, coffee shop, furniture store, salon, medical center, fitness, education, auto service).
 
-### apihunter
-REST API security CLI for discovery, auth auditing, and heuristic checks around IDOR, CORS, and rate-limit issues.
+## How I work
 
-### bounthunt
-Recon orchestration pipeline built around subfinder, dnsx, httpx, naabu, nuclei, and katana with scope-gated execution and diff monitoring.
-
-### gqlhunter
-GraphQL recon and risk analysis toolkit with introspection, classification, schema diffing, SARIF output, and dashboard reporting.
+- **Detection-first** — analyse and verify before attempting anything intrusive
+- **Scope-aware** — no request happens against a target without explicit authorization in scope files
+- **Evidence over opinions** — every finding carries reproducible output: SQLite history, HTML/Markdown reports, SARIF
+- **Open formats** — SQLite, HTML, Markdown, SARIF 2.1.0, no opaque state
+- **Readable code** — typed Python, small modules, CI on every push
 
 ## Stack
 
-<p align="left">
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=python,docker,sqlite,githubactions,vscode,git&theme=dark" alt="stack" /></a>
-</p>
+Python · Typer · HTTPX · SQLite · Docker · GitHub Actions · GraphQL · OpenAPI / SARIF
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Python-3.11+-8b949e?style=for-the-badge&logo=python&logoColor=white&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/Typer-CLI-8b949e?style=for-the-badge&labelColor=161b22" />
-  <img src="https://img.shields.io/badge/Rich-Terminal-8b949e?style=for-the-badge&labelColor=161b22" />
-  <img src="https://img.shields.io/badge/HTTPX-Async-8b949e?style=for-the-badge&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/GraphQL-API-8b949e?style=for-the-badge&logo=graphql&logoColor=white&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/OpenAPI-Spec-8b949e?style=for-the-badge&labelColor=161b22" />
-  <img src="https://img.shields.io/badge/SARIF-2.1.0-8b949e?style=for-the-badge&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/SQLite-Storage-8b949e?style=for-the-badge&logo=sqlite&logoColor=white&labelColor=0d1117" />
-</p>
+## Contact
 
-## Current focus
-
-- Hardening `gqlhunter` SARIF and reporting surfaces
-- Improving dashboard tooling and traceability
-- Researching broken access control and DOM XSS patterns
-- Building safer, more observable security workflows
-
-## Principles
-
-- Detection-first: analysis and recon before exploitation
-- Scope-aware: every request is constrained by allow/deny policy
-- Open formats: SQLite, HTML, Markdown, SARIF
-- Open source: reproducible, inspectable, auditable
-- Security tooling should improve visibility, not increase risk
-
-## Links
-
-<div align="center">
-
-[site](https://bess1lie.github.io) · [apihunter](https://github.com/bess1lie/apihunter) · [bounthunt](https://github.com/bess1lie/bounthunt) · [gqlhunter](https://github.com/bess1lie/gqlhunter)
-
-</div>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=80&section=footer&text=detection-first%20·%20scope-aware%20·%20open-source&fontColor=8b949e&fontSize=13&fontAlignY=40" alt="footer banner" />
+- Site: https://bess1lie.github.io
+- Email: [bess1iework@gmail.com](mailto:bess1iework@gmail.com)
